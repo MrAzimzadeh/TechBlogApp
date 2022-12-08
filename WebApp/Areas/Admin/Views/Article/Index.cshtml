@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Article>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">
+            <a href="/admin/article/create" class="text-decoration-none">Create</a>
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Picture</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>Views</th>
+                        <th>Created date</th>
+                        <th>Update date</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Title</th>
+                        <th>Picture</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>Views</th>
+                        <th>Created date</th>
+                        <th>Update date</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var article in Model)
+                    {
+                        <tr>
+                            <td>@article.Title</td>
+                            <td>
+                                <img src="@article.PhotoUrl" />
+                            </td>
+                            <td>@article.User.Name</td>
+                            <td>@article.Category.Name</td>
+                            <td>
+                                @foreach (var tag in article.ArticleTags)
+                                {
+                                    <span>@tag.Tag.Name</span>
+                                }
+                            </td>
+                            <td>@article.Views</td>
+                            <td>@article.CreatedDate</td>
+                            <td>@article.UpdatedDate</td>
+                            <td>@article.IsActive</td>
+                            <td>
+                                <a href="/admin/article/edit/@article.Id">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
