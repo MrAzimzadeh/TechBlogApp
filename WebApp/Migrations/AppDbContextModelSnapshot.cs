@@ -167,6 +167,9 @@ namespace WebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Click")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -192,6 +195,9 @@ namespace WebApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("SizeY")
+                        .HasColumnType("int");
+
+                    b.Property<int>("View")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

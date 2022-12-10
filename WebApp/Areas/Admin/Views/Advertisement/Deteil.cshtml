@@ -1,0 +1,55 @@
+﻿@model Advertisement
+
+
+<section class="vh-100 gradient-custom-2">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="card card-stepper" style="border-radius: 16px;">
+                    <div class="card-header p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="text-muted mb-2"> ID: <span class="fw-bold text-body">@Model.Id</span></p>
+                                <p class="text-muted mb-0"> Create Date:  <span class="fw-bold text-body">@Model.CreatedDate</span> </p>
+                            </div>
+                            <div>
+                                <h6 class="mb-0"> <a href="@Model.PhotoUrl" target="_blank">photo look</a> </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-row mb-4 pb-2">
+                            <div class="flex-fill">
+                                <h5 class="bold">Advertisement Name : @Model.Name</h5>
+                                <p class="text-muted"> Size:<span> @Model.SizeX x @Model.SizeY </span></p>
+                                <h4 class="mb-3"> Price: <span class="large text-muted"> @Model.Price</span></h4>
+                                <p class="text-muted"> Rate:<span> @Model.Rate</span></p>
+                                <p class="text-muted"> View:<span> @Model.View</span></p>
+                                <p class="text-muted"> Click:<span> @Model.Click</span></p>
+                                <div class="form-outline mb-3">
+                                    <input class="form-control"
+                                           id="formControlDisabled"
+                                           type="text"
+                                           placeholder="Addres:@Model.DirectionAddress"
+                                           aria-label="disabled input example"
+                                           disabled />
+                                    @*<label class="form-label" for="formControlDisabled"></label>*@
+                                </div>
+                                <p class="text-muted">Advertisement Status on: <span class="text-body"> @Model.View </span></p>
+                            </div>
+                            <div>
+                                <img class="align-self-center img-fluid"
+                                     src="@Model.PhotoUrl" width="250">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4">
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-primary" href="/admin/advertisement">back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

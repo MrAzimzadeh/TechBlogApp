@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Internal;
 using WebApp.Data;
 using WebApp.Models;
 
@@ -8,15 +9,17 @@ namespace WebApp.Areas.Admin.Controllers
     public class AdvertisementController : Controller
     {
         private readonly AppDbContext _context;
-        public AdvertisementController(AppDbContext context)
+        private readonly IWebHostEnvironment _env;
+        public AdvertisementController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         public IActionResult Index()
         {
-            var advertisement = _context.Advertisements.ToList();
-            return View(advertisement);
+            var ads = _context.Advertisements.ToList();
+            return View(ads);
         }
 
         public IActionResult Create()
@@ -25,56 +28,42 @@ namespace WebApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Advertisement advertisement)
+        public IActionResult Create(Advertisement advertisement, IFormFile Photo)
         {
-            var findAdvertisement = _context.Advertisements.FirstOrDefault(x => x.Name == advertisement.Name);
-            if (findAdvertisement != null)
+
+            var path = "/uploads/" + Guid.NewGuid() + Photo.FileName;
+            using (var fileStream = new FileStream(_env.WebRootPath + path, FileMode.Create))
             {
-                ViewBag.AdvertisementExist = "This category is exist";
-                return View(findAdvertisement);
+                Photo.CopyTo(fileStream);
             }
-            _context.Advertisements.Add(advertisement);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-
-
-
-        }
-
-        public IActionResult Edit(int id)
-        {
-            var advertisement = _context.Advertisements.FirstOrDefault(x => x.Id == id);
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Edit(Advertisement advertisement)
-        {
-            var findAdvertisement = _context.Advertisements.FirstOrDefault(x => x.Name == advertisement.Name);
-            if (findAdvertisement != null)
+            Advertisement ads = new()
             {
-                ViewBag.AdvertisementExist = "This category is exist";
-                return View(findAdvertisement);
+                Name = advertisement.Name,
+                PhotoUrl = path,
+                Price = advertisement.Price,
+                Rate = advertisement.Rate,
+                SizeX = advertisement.SizeX,
+                SizeY = advertisement.SizeY,
+                DirectionAddress = "https://" + advertisement.DirectionAddress,
+                CreatedDate = DateTime.Now, //aftomatik olur deye 
+                Click = 0,
+                View = 0
+
+            };
+            _context.Advertisements.Add(ads);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+       
+            public IActionResult Deteil(int id)
+            {
+                var deteil = _context.Advertisements.FirstOrDefault(x => x.Id == id);
+                return View(deteil);
             }
+        
 
-            _context.Advertisements.Update(advertisement);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
-
-        public IActionResult Delete(int id)
-        {
-            var advertisement = _context.Advertisements.FirstOrDefault(x => x.Id == id);
-            return View();
-
-        }
-        [HttpPost]
-        public IActionResult Delete(Advertisement advertisement)
-        {
-            _context.Advertisements.Remove(advertisement);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
 
     }
 }

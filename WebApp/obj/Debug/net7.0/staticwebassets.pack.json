@@ -7853,6 +7853,18 @@
       "PackagePath": "staticwebassets\\upload\\tech_video_03.jpg"
     },
     {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\uploads\\226fe806-fb5c-4e96-b493-727a92b1359e22585.jpg",
+      "PackagePath": "staticwebassets\\uploads\\226fe806-fb5c-4e96-b493-727a92b1359e22585.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\uploads\\31a43779-d029-4630-9008-89836e03e8b9wp8778419-dark-code-wallpapers (1).png",
+      "PackagePath": "staticwebassets\\uploads\\31a43779-d029-4630-9008-89836e03e8b9wp8778419-dark-code-wallpapers (1).png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\uploads\\99fc78c6-7236-43b2-a1ba-5cddd0c60c3425181.jpg",
+      "PackagePath": "staticwebassets\\uploads\\99fc78c6-7236-43b2-a1ba-5cddd0c60c3425181.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
