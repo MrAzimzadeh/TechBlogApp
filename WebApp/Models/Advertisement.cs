@@ -3,6 +3,7 @@
     public class Advertisement
     {
         public int Id { get; set; } //
+        public int Name { get; set; }
         public int SizeX { get; set; }//
         public int SizeY { get; set; }//
         public decimal Price { get; set; }//
