@@ -1,4 +1,16 @@
-﻿<div class="col-lg-6 m-auto">
+﻿@model Category
+@if (@ViewBag.CategoryExist != null)
+{
+    <div class="col-lg-6 m-auto mb-5">
+        <div class="alert alert-danger">
+            @ViewBag.CategoryExist
+        </div>
+    </div>
+}
+
+
+
+<div class="col-lg-6 m-auto">
     <div class="card shadow p-3 mb-4">
         <form method="post">
             <div class="form-group">

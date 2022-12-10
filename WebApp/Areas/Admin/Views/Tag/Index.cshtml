@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Tag>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">
+            <a href="/admin/tag/create" class="text-decoration-none">Create</a>
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var tag in Model)
+                    {
+                        <tr>
+                            <td>@tag.Name</td>
+                            <td>
+                                <a href="/admin/tag/edit/@tag.Id">Edit</a>
+                                <a href="/admin/tag/delete/@tag.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

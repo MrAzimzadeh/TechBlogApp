@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Advertisement>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">
+            <a href="/admin/advertisement/create" class="text-decoration-none">Create</a>
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Price</th>
+                        <th>Rate</th>
+                        <th>DirectionAddress</th>
+                        <th>Created date</th>
+                        <th>SizeX</th>
+                        <th>SizeY</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        @*<th>Title</th>
+                        <th>Picture</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>Views</th>
+                        <th>Update date</th>
+                        <th>Created date</th>
+                        <th>Status</th>*@
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Price</th>
+                        <th>Rate</th>
+                        <th>DirectionAddress</th>
+                        <th>Created date</th>
+                        <th>SizeX</th>
+                        <th>SizeY</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @* @foreach (var advertisement in Model)
+                    {
+                        <@*tr>
+                            <td>@advertisement.Name</td>
+                            <td>
+                                <img src="@advertisement.PhotoUrl" />
+                            </td>
+                            <td>@advertisement</td>
+                            <td>@article.Category.Name</td>
+                            <td>
+                                @foreach (var tag in article.ArticleTags)
+                                {
+                                    <span>@tag.Tag.Name</span>
+                                }
+                            </td>
+                            <td>@article.Views</td>
+                            <td>@article.CreatedDate</td>
+                            <td>@article.UpdatedDate</td>
+                            <td>@article.IsActive</td>
+                            <td>
+                                <a href="/admin/article/edit/@article.Id">Edit</a>
+                            </td>
+                        </tr>
+                    }*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

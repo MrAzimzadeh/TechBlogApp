@@ -13,6 +13,74 @@
       "PackagePath": "staticwebassets\\admin\\css\\sb-admin-2.min.css"
     },
     {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\ads-bg.png",
+      "PackagePath": "staticwebassets\\admin\\images\\ads-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\arrow.png",
+      "PackagePath": "staticwebassets\\admin\\images\\arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\footer.png",
+      "PackagePath": "staticwebassets\\admin\\images\\footer.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\hover.png",
+      "PackagePath": "staticwebassets\\admin\\images\\hover.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\loader.gif",
+      "PackagePath": "staticwebassets\\admin\\images\\loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\menubg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\menubg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\version\\tech-footer-logo.png",
+      "PackagePath": "staticwebassets\\admin\\images\\version\\tech-footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\version\\tech-logo.png",
+      "PackagePath": "staticwebassets\\admin\\images\\version\\tech-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\images\\videohover.png",
+      "PackagePath": "staticwebassets\\admin\\images\\videohover.png"
+    },
+    {
       "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\img\\undraw_posting_photo.svg",
       "PackagePath": "staticwebassets\\admin\\img\\undraw_posting_photo.svg"
     },
@@ -59,6 +127,178 @@
     {
       "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\js\\sb-admin-2.min.js",
       "PackagePath": "staticwebassets\\admin\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\author.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\author.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\author_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\author_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\author_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\author_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\banner_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\banner_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\banner_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\banner_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\banner_03.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\banner_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\banner_07.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\banner_07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_03.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_03.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_04.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_05.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_06.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_07.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_08.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_09.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_blog_10.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_blog_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_03.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_04.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_05.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_06.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_07.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_08.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_09.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_10.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_11.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_12.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_13.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_14.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_15.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_16.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_17.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_18.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_19.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_menu_20.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_menu_20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_video_01.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_video_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_video_02.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_video_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\upload\\tech_video_03.jpg",
+      "PackagePath": "staticwebassets\\admin\\upload\\tech_video_03.jpg"
     },
     {
       "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\admin\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
@@ -7333,244 +7573,284 @@
       "PackagePath": "staticwebassets\\admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\colors.css",
+      "PackagePath": "staticwebassets\\css\\colors.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\css\\version\\tech.css",
+      "PackagePath": "staticwebassets\\css\\version\\tech.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\ads-bg.png",
+      "PackagePath": "staticwebassets\\images\\ads-bg.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\images\\apple-touch-icon.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\arrow.png",
+      "PackagePath": "staticwebassets\\images\\arrow.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\footer.png",
+      "PackagePath": "staticwebassets\\images\\footer.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\hover.png",
+      "PackagePath": "staticwebassets\\images\\hover.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\loader.gif",
+      "PackagePath": "staticwebassets\\images\\loader.gif"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\menubg.jpg",
+      "PackagePath": "staticwebassets\\images\\menubg.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\version\\tech-footer-logo.png",
+      "PackagePath": "staticwebassets\\images\\version\\tech-footer-logo.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\version\\tech-logo.png",
+      "PackagePath": "staticwebassets\\images\\version\\tech-logo.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\images\\videohover.png",
+      "PackagePath": "staticwebassets\\images\\videohover.png"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\js\\tether.min.js",
+      "PackagePath": "staticwebassets\\js\\tether.min.js"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\author.jpg",
+      "PackagePath": "staticwebassets\\upload\\author.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\author_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\author_01.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\author_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\author_02.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\banner_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\banner_01.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\banner_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\banner_02.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\banner_03.jpg",
+      "PackagePath": "staticwebassets\\upload\\banner_03.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\banner_07.jpg",
+      "PackagePath": "staticwebassets\\upload\\banner_07.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_01.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_02.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_03.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_03.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_01.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_02.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_03.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_03.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_04.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_04.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_05.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_05.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_06.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_06.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_07.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_07.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_08.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_08.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_09.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_09.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_blog_10.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_blog_10.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_01.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_02.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_03.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_03.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_04.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_04.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_05.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_05.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_06.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_06.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_07.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_07.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_08.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_08.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_09.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_09.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_10.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_10.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_11.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_11.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_12.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_12.jpg"
     },
     {
-      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_13.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_14.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_15.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_16.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_17.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_18.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_19.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_menu_20.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_menu_20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_video_01.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_video_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_video_02.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_video_02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehem\\OneDrive\\Desktop\\ComparAcademy\\TechBlogApp\\WebApp\\wwwroot\\upload\\tech_video_03.jpg",
+      "PackagePath": "staticwebassets\\upload\\tech_video_03.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",

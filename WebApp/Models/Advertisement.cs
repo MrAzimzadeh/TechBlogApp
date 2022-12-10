@@ -11,5 +11,6 @@
         public string PhotoUrl { get; set; }
         public string DirectionAddress { get; set; }
         public DateTime CreatedDate { get; set; }
+
     }
 }
