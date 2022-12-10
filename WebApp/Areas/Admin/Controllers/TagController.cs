@@ -31,8 +31,8 @@ namespace WebApp.Areas.Admin.Controllers
             var tagFind = _context.Tags.FirstOrDefault(x => x.Name == tag.Name);
             if (tagFind != null)
             {
-                ViewBag.TagExist = "This category is exist";
-                return View(tagFind);
+                ViewBag.TagExist = "This  is exist";
+                return View();
             }
             _context.Tags.Add(tag);
             _context.SaveChanges();
