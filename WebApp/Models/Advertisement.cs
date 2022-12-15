@@ -3,7 +3,7 @@
     public class Advertisement
     {
         public int Id { get; set; } //
-        public int Name { get; set; }
+        public string Name { get; set; }
         public int SizeX { get; set; }//
         public int SizeY { get; set; }//
         public decimal Price { get; set; }//
@@ -15,6 +15,7 @@
         public string PhotoUrl { get; set; }//
         public string DirectionAddress { get; set; }//
         public DateTime CreatedDate { get; set; }//
+        public bool IsDelete { get; set; }
 
     }
 }

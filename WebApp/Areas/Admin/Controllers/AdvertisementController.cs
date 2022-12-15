@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Internal;
 using WebApp.Data;
 using WebApp.Models;
 
@@ -18,8 +17,10 @@ namespace WebApp.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+
             var ads = _context.Advertisements.ToList();
             return View(ads);
+
         }
 
         public IActionResult Create()
@@ -56,13 +57,21 @@ namespace WebApp.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-       
-            public IActionResult Deteil(int id)
-            {
-                var deteil = _context.Advertisements.FirstOrDefault(x => x.Id == id);
-                return View(deteil);
-            }
-        
+
+        public IActionResult Deteil(int id)
+        {
+            var deteil = _context.Advertisements.FirstOrDefault(x => x.Id == id);
+            return View(deteil);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var data = _context.Advertisements.SingleOrDefault(a => a.Id == id);
+
+           
+            return View(data);
+        }
 
 
     }

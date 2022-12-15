@@ -18,18 +18,19 @@
                         <th>View</th>
                         <th>click</th>
                         <th>Created date</th>
+                        <th>Status</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        
                         <th>Name</th>
                         <th>Picture</th>
                         <th>Size</th>
                         <th>View</th>
                         <th>click</th>
                         <th>Created date</th>
+                        <th>Status</th>
                         <th></th>
                     </tr>
                 </tfoot>
@@ -47,6 +48,20 @@
                             <td>@ads.View</td>
                             <td>@ads.Click</td>
                             <td>@ads.CreatedDate</td>
+                            <td>
+
+                                @if (ads.IsDelete)
+                                {
+                                    <span class="btn btn-danger btn-sm">Deleted</span>
+                                }
+                                else
+                                {
+                                    <span class="btn btn-success btn-sm">Active</span>
+                                        
+                                }
+
+                            </td>
+
                             <td>
                                 <a href="/admin/advertisement/deteil/@ads.Id">Detail</a>
                                 <a href="/admin/advertisement/delete/@ads.Id">Delete</a>
