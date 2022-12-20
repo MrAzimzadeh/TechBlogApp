@@ -60,19 +60,29 @@ namespace WebApp.Areas.Admin.Controllers
 
         public IActionResult Deteil(int id)
         {
+
             var deteil = _context.Advertisements.FirstOrDefault(x => x.Id == id);
+
             return View(deteil);
+
         }
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
             var data = _context.Advertisements.SingleOrDefault(a => a.Id == id);
-
-           
             return View(data);
         }
+        [HttpPost]
 
+        public IActionResult Delete(Advertisement advertisement)
+        {
+            var result = _context.Advertisements.FirstOrDefault(x=>x.Id == advertisement.Id);
+            result.IsDelete = true;
+            _context.Advertisements.Update(result);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
 
     }
 }

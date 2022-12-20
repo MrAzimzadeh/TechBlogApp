@@ -40,9 +40,9 @@
                         <tr>
                             <td>@ads.Name</td>
                             <td>
-                                <img  src="@ads.PhotoUrl" width="100" />
+                                <img src="@ads.PhotoUrl" width="100" />
                             </td>
-                            
+
                             <td>@ads.SizeX x @ads.SizeY</td>
 
                             <td>@ads.View</td>
@@ -57,14 +57,18 @@
                                 else
                                 {
                                     <span class="btn btn-success btn-sm">Active</span>
-                                        
+
                                 }
 
                             </td>
 
                             <td>
-                                <a href="/admin/advertisement/deteil/@ads.Id">Detail</a>
-                                <a href="/admin/advertisement/delete/@ads.Id">Delete</a>
+                                <a href="/admin/advertisement/deteil/@ads.Id" style="color:green">
+                                    Detail <i class="fa fa-info"> </i>
+                                </a>
+                                <a href="/admin/advertisement/delete/@ads.Id" style="color:darkred">
+                                    Delete <i class="fa fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                     }

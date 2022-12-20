@@ -1,0 +1,71 @@
+﻿@model Article
+@*@model IEnumerable<Article>*@
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">
+        @Model.Title :
+        <small>@Model.CreatedDate</small>
+    </h1>
+    <!-- Portfolio Item Row -->
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="@Model.PhotoUrl" alt="">
+        </div>
+        <div class="col-md-8">
+            <h3 class="my-3">Project Details</h3>
+            <p>@Model.Content</p>
+            <h3 class="my-3">Category</h3>
+            <ul class="">
+                @*
+                    @foreach (var item in Model.Category.Articles)
+                    {
+                    <li>
+                    @item.Category.Articles
+                    </li>
+                    }
+                *@
+                <li>@Model.CategoryId</li>
+            </ul>
+            <h3 class="my-3">Tag</h3>
+            <ul class="">
+
+                <!--taglar bura gelecelkkkk-->
+
+            </ul>
+        </div>
+        <hr />
+        <hr style="width:100%;" />
+
+        <div>
+            <ul>
+                <li>
+                    Update date:
+                    <span>
+                        @Model.UpdatedDate
+                    </span>
+                </li>
+                <li>
+                    Views:
+                    <span>
+                        @Model.Views
+                    </span>
+                </li>
+                <li>
+                    Status :
+                    <span>
+                        @Model.IsActive
+                    </span>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->

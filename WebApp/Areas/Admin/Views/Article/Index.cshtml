@@ -44,7 +44,7 @@
                         <tr>
                             <td>@article.Title</td>
                             <td>
-                                <img src="@article.PhotoUrl" />
+                                <img src="@article.PhotoUrl" style="width:100%;" />
                             </td>
                             <td>@article.User.Name</td>
                             <td>@article.Category.Name</td>
@@ -60,6 +60,8 @@
                             <td>@article.IsActive</td>
                             <td>
                                 <a href="/admin/article/edit/@article.Id">Edit</a>
+                                <a href="/admin/article/deteil/@article.Id">Deteil</a>
+                                <a href="/admin/article/Delete/@article.Id">Delete</a>
                             </td>
                         </tr>
                     }
