@@ -1,4 +1,8 @@
-﻿
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index page ";
+}
+
 <section class="section first-section">
     <div class="container-fluid">
         <div class="masonry-blog clearfix">
@@ -65,41 +69,61 @@
                     </div><!-- end blog-top -->
 
                     <div class="blog-list clearfix">
-                        
 
-                        <div class="blog-box row">
-                            <div class="col-md-4">
-                                <div class="post-media">
-                                    <a href="tech-single.html" title="">
-                                        <img src="~/upload/tech_blog_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect"></div>
-                                    </a>
-                                </div><!-- end media -->
-                            </div><!-- end col -->
+                        @{
+                            int caunt = 0;
+                        }
 
-                            <div class="blog-meta big-meta col-md-8">
-                                <h4><a href="tech-single.html" title="">Top 10 phone applications and 2017 mobile design awards</a></h4>
-                                <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Gadgets</a></small>
-                                <small><a href="tech-single.html" title="">21 July, 2017</a></small>
-                                <small><a href="tech-author.html" title="">by Matilda</a></small>
-                                <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                            </div><!-- end meta -->
-                        </div><!-- end blog-box -->
+                        @foreach (var article in Model.Articles)
+                        {
+                            caunt++;
 
-                        <hr class="invis">
 
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="~/upload/banner_02.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                        
+                            <div class="blog-box row">
+                                <div class="col-md-4">
+                                    <div class="post-media">
+                                        <a href="/article/deteil/@article.Id/@article.SeoUrl" title="">
+                                            <img src="@article.PhotoUrl" alt="@article.Title" class="img-fluid">
+                                            <div class="hovereffect"></div>
+                                        </a>
+                                    </div><!-- end media -->
+                                </div><!-- end col -->
 
+                                
+                                <div class="blog-meta big-meta col-md-8">
+                                    <h4><a href="/article/deteil/@article.Id/@article.SeoUrl" title="">@article.Title</a></h4>
+                                    <p>@Html.Raw(article.Content.Substring(0,5))..</p> <!--5  E KIMI YAZIR -->
+                                    <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">@article.Category.Name</a></small>
+                                    <small><a href="tech-single.html" title="">@article.CreatedDate.ToString("dd MM yyyy")</a></small>
+                                    <small><a href="tech-author.html" title="">by @article.User.Name</a></small>
+                                    <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> @article.Views</a></small>
+                                </div><!-- end meta -->
+
+
+                            </div>
+
+                            <!-- end blog-box -->
+
+                            <hr class="invis">
+                            if (caunt / 3 == 1)
+                            {
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="banner-spot clearfix">
+                                            <div class="banner-img">
+                                                <img src="~/upload/banner_02.jpg" alt="" class="img-fluid">
+                                            </div><!-- end banner-img -->
+                                        </div><!-- end banner -->
+                                    </div><!-- end col -->
+                                </div>
+                                <hr class="invis">
+
+                                <!-- end row -->
+                            }
+
+
+
+                        }
                     </div><!-- end blog-list -->
                 </div><!-- end page-wrapper -->
 

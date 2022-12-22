@@ -1,8 +1,12 @@
-﻿namespace WebApp.ViewModels
+﻿using WebApp.Models;
+
+namespace WebApp.ViewModels
 {
 
-    public class HomeVM 
+    public class HomeVM
     {
+        public List<Article> Articles { get; set; }
+
 
 
     }
