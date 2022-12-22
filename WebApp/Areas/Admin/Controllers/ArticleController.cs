@@ -138,7 +138,7 @@ namespace WebApp.Areas.Admin.Controllers
         public IActionResult Deteil(int id)
         {
 
-            var articles = _context.Articles.FirstOrDefault(a => a.Id == id);
+            var articles = _context.Articles.SingleOrDefault(a => a.Id == id);
             
             return View(articles);
         
@@ -152,6 +152,7 @@ namespace WebApp.Areas.Admin.Controllers
 
         [HttpPost]
 
+
         public IActionResult Delete(Article  article)
         {
             var result = _context.Articles.FirstOrDefault(x => x.Id == article.Id);
@@ -160,6 +161,7 @@ namespace WebApp.Areas.Admin.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
 
     }
 }

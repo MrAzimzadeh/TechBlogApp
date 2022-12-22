@@ -71,7 +71,7 @@ namespace WebApp.Controllers
                 Surname = registerDTO.Surname,
                 Email = registerDTO.Email,
                 AboutAuthor = "",
-                PhotoUrl = "/"
+                PhotoUrl = "/uploads/avatar.png"
 
             };
             var result = await _userManager.CreateAsync(newUser, registerDTO.Password);

@@ -51,17 +51,19 @@
                 </a>
             </li>
 
+            @if (User.IsInRole("Admin , Bas Redaktor , Redactor "))
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/article">
+                        <i class="fas fa-fw fa-text-height"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+
+            }
+            <!-- Nav Item - Dashboard -->
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="/admin/article">
-                    <i class="fas fa-fw fa-text-height"></i>
-                    <span>Articles</span>
-                </a>
-            </li>
-
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">   
                 <a class="nav-link" href="/admin/category">
                     <i class="fas fa-fw fa-archive"></i>
                     <span>Categories</span>
@@ -91,10 +93,14 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
+            <!---->
+                        @if (User.IsInRole("Admin"))
+            {
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>User settings</span>
@@ -107,7 +113,7 @@
                     </div>
                 </div>
             </li>
-
+            }
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -131,9 +137,11 @@
                 </a>
             </li>
 
-            
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+
+
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -325,7 +333,6 @@
                         <!--
 
                         -->
-
                         @await Component.InvokeAsync("Auth")
                         <!---->
                     </ul>
