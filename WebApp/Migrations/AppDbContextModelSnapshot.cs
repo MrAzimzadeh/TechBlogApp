@@ -232,9 +232,6 @@ namespace WebApp.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("int");
-
                     b.Property<string>("PhotoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -314,6 +311,9 @@ namespace WebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("ArticleId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CommentedDate")
                         .HasColumnType("datetime2");
 
@@ -326,6 +326,8 @@ namespace WebApp.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
 
                     b.HasIndex("UserId");
 
@@ -548,11 +550,17 @@ namespace WebApp.Migrations
 
             modelBuilder.Entity("WebApp.Models.Comment", b =>
                 {
+                    b.HasOne("WebApp.Models.Article", "Article")
+                        .WithMany("Comments")
+                        .HasForeignKey("ArticleId");
+
                     b.HasOne("WebApp.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Article");
 
                     b.Navigation("User");
                 });
@@ -579,6 +587,8 @@ namespace WebApp.Migrations
             modelBuilder.Entity("WebApp.Models.Article", b =>
                 {
                     b.Navigation("ArticleTags");
+
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("WebApp.Models.Category", b =>

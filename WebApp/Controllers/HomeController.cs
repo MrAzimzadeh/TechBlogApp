@@ -18,7 +18,11 @@ namespace WebApp.Controllers
         public IActionResult Index()
         {
 
-            var articles = _context.Articles.Include(x => x.Category).Include(x=>x.User).Where(x => x.IsDeleted == false || x.IsActive == true).ToList();
+            var articles = _context.Articles
+            .Include(x => x.Category)
+            .Include(x=>x.User)
+            .Where(x => x.IsDeleted == false || x.IsActive == true)
+            .ToList();
             HomeVM homeVM= new()
             {
                 Articles= articles,

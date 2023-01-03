@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-8">
             <h3 class="my-3">Project Details</h3>
-            <p>@Model.Content</p>
+            <p>@Html.Raw(Model.Content)</p>
             <h3 class="my-3">Category</h3>
             <ul class="">
                 @*
@@ -26,11 +26,16 @@
                     </li>
                     }
                 *@
-                <li>@Model.CategoryId</li>
+                <li>@Model.Category.Name</li>
             </ul>
             <h3 class="my-3">Tag</h3>
             <ul class="">
 
+               @foreach (var tag in Model.ArticleTags)
+                {
+                    <li></li>
+
+                }
                 <!--taglar bura gelecelkkkk-->
 
             </ul>

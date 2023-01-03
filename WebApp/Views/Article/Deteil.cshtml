@@ -1,12 +1,10 @@
 ﻿@model DeteilVM
 
 
+
 <section class="section single-wrapper">
-
     <div class="container">
-
         <div class="row">
-
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                 <div class="page-wrapper">
                     <div class="blog-title-area text-center">
@@ -22,7 +20,7 @@
 
                         <div class="blog-meta big-meta">
                             <small><a href="tech-single.html" title="">@Model.Article.CreatedDate.ToString("dd MM yyyy")</a></small>
-                            <small><a href="tech-author.html" title="">@Model.Article.User.Name</a></small>
+                            <small><a href="tech-author.html" title="">by @Model.Article.User.Name</a></small>
                             <small><a href="#" title=""><i class="fa fa-eye"></i> @Model.Article.Views</a></small>
                         </div><!-- end meta -->
 
@@ -49,8 +47,6 @@
                             @foreach (var tag in Model.Article.ArticleTags)
                             {
                                 <small><a href="#" title="">@tag.Tag.Name</a></small>
-
-
                             }
                         </div><!-- end meta -->
 
@@ -77,33 +73,40 @@
 
                     <div class="custombox prevnextpost clearfix">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="blog-list-widget">
-                                    <div class="list-group">
-                                        <a href="tech-single.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between text-right">
-                                                <img src="upload/tech_menu_19.jpg" alt="" class="img-fluid float-right">
-                                                <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
-                                                <small>Prev Post</small>
-                                            </div>
-                                        </a>
+                            @if (Model.Befero != null)
+                            {
+                                <div class="col-lg-6">
+                                    <div class="blog-list-widget">
+                                        <div class="list-group">
+                                            <a href="/article/deteil/@Model.Befero.Id/@Model.Befero.SeoUrl" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="w-100 justify-content-between text-right">
+                                                    <img src="@Model.Befero.PhotoUrl" alt="" class="img-fluid float-right">
+                                                    <h5 class="mb-1">@Model.Befero.Title</h5>
+                                                    <small>Prev Post</small>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div><!-- end col -->
-
-                            <div class="col-lg-6">
-                                <div class="blog-list-widget">
-                                    <div class="list-group">
-                                        <a href="tech-single.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="upload/tech_menu_20.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">Let's make an introduction to the glorious world of history</h5>
-                                                <small>Next Post</small>
-                                            </div>
-                                        </a>
+                                <!-- end col -->
+                            }
+                            @if (Model.After != null)
+                            {
+                                <div class="col-lg-6">
+                                    <div class="blog-list-widget">
+                                        <div class="list-group">
+                                            <a href="/article/deteil/@Model.After.Id/@Model.After.SeoUrl" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="w-100 justify-content-between">
+                                                    <img src="@Model.After.PhotoUrl" alt="" class="img-fluid float-left">
+                                                    <h5 class="mb-1">@Model.After.Title</h5>
+                                                    <small>Next Post</small>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div><!-- end col -->
+                                <!-- end col -->
+                            }
                         </div><!-- end row -->
                     </div><!-- end author-box -->
 
@@ -138,86 +141,54 @@
                     <div class="custombox clearfix">
                         <h4 class="small-title">You may also like</h4>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <a href="tech-single.html" title="">
-                                            <img src="upload/tech_menu_04.jpg" alt="" class="img-fluid">
-                                            <div class="hovereffect">
-                                                <span class=""></span>
-                                            </div><!-- end hover -->
-                                        </a>
-                                    </div><!-- end media -->
-                                    <div class="blog-meta">
-                                        <h4><a href="tech-single.html" title="">We are guests of ABC Design Studio</a></h4>
-                                        <small><a href="blog-category-01.html" title="">Trends</a></small>
-                                        <small><a href="blog-category-01.html" title="">21 July, 2017</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-                            </div><!-- end col -->
+                            @foreach (var item in Model.Suggestions)
+                            {
+                                <div class="col-lg-6">
+                                    <div class="blog-box">
+                                        <div class="post-media">
+                                            <a href="tech-single.html" title="">
+                                                <img src="@item.PhotoUrl" alt="" class="img-fluid">
+                                                <div class="hovereffect">
+                                                    <span class=""></span>
+                                                </div><!-- end hover -->
+                                            </a>
+                                        </div><!-- end media -->
+                                        <div class="blog-meta">
+                                            <h4><a href="/article/deteil/@item.Id/@item.SeoUrl" title="">@item.Title</a></h4>
+                                            <small><a href="blog-category-01.html" title="">@item.Category.Name</a></small>
+                                            <small><a href="blog-category-01.html" title="">@item.CreatedDate.ToString("dd MM yyyy")</a></small>
+                                        </div><!-- end meta -->
+                                    </div><!-- end blog-box -->
+                                </div>
 
-                            <div class="col-lg-6">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <a href="tech-single.html" title="">
-                                            <img src="upload/tech_menu_06.jpg" alt="" class="img-fluid">
-                                            <div class="hovereffect">
-                                                <span class=""></span>
-                                            </div><!-- end hover -->
-                                        </a>
-                                    </div><!-- end media -->
-                                    <div class="blog-meta">
-                                        <h4><a href="tech-single.html" title="">Nostalgia at work with family</a></h4>
-                                        <small><a href="blog-category-01.html" title="">News</a></small>
-                                        <small><a href="blog-category-01.html" title="">20 July, 2017</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-                            </div><!-- end col -->
+                                <!-- end col -->
+                            }
                         </div><!-- end row -->
                     </div><!-- end custom-box -->
 
                     <hr class="invis1">
 
                     <div class="custombox clearfix">
-                        <h4 class="small-title">3 Comments</h4>
+                        <h4 class="small-title">@Model.Article.Comments.Count() Comments</h4>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="comments-list">
-                                    <div class="media">
-                                        <a class="media-left" href="#">
-                                            <img src="upload/author.jpg" alt="" class="rounded-circle">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading user_name">Amanda Martines <small>5 days ago</small></h4>
-                                            <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean.</p>
-                                            <a href="#" class="btn btn-primary btn-sm">Reply</a>
+                                    @if (Model.Article.Comments.Count() == 0)
+                                    {
+                                        <div class="alert alert-warning">Comment is empty</div>
+                                    }
+                                    @foreach (var comment in Model.Article.Comments)
+                                    {
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <img src="@comment.User.PhotoUrl" alt="" class="rounded-circle">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading user_name">@comment.User.Name @comment.User.Surname <small>5 days ago</small></h4>
+                                                <p>@comment.Content</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="media">
-                                        <a class="media-left" href="#">
-                                            <img src="upload/author_01.jpg" alt="" class="rounded-circle">
-                                        </a>
-                                        <div class="media-body">
-
-                                            <h4 class="media-heading user_name">Baltej Singh <small>5 days ago</small></h4>
-
-                                            <p>Drinking vinegar stumptown yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small.</p>
-
-                                            <a href="#" class="btn btn-primary btn-sm">Reply</a>
-                                        </div>
-                                    </div>
-                                    <div class="media last-child">
-                                        <a class="media-left" href="#">
-                                            <img src="upload/author_02.jpg" alt="" class="rounded-circle">
-                                        </a>
-                                        <div class="media-body">
-
-                                            <h4 class="media-heading user_name">Marie Johnson <small>5 days ago</small></h4>
-                                            <p>Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small.</p>
-
-                                            <a href="#" class="btn btn-primary btn-sm">Reply</a>
-                                        </div>
-                                    </div>
+                                    }
                                 </div>
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -229,13 +200,19 @@
                         <h4 class="small-title">Leave a Reply</h4>
                         <div class="row">
                             <div class="col-lg-12">
-                                <form class="form-wrapper">
-                                    <input type="text" class="form-control" placeholder="Your name">
-                                    <input type="text" class="form-control" placeholder="Email address">
-                                    <input type="text" class="form-control" placeholder="Website">
-                                    <textarea class="form-control" placeholder="Your comment"></textarea>
-                                    <button type="submit" class="btn btn-primary">Submit Comment</button>
-                                </form>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <form method="post" class="form-wrapper">
+                                        <input type="hidden" name="ArticleId" value="@Model.Article.Id" />
+                                        <textarea class="form-control" name="Content" placeholder="Your comment"></textarea>
+                                        <button type="submit" class="btn btn-primary">Submit Comment</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <div class="alert alert-info">Go to  <a href="/auth/login">login</a></div>
+                                }
+
                             </div>
                         </div>
                     </div>
@@ -427,6 +404,5 @@
                 </div><!-- end sidebar -->
             </div><!-- end col -->
         </div><!-- end row -->
-    </div><!-- end container -->
+    </div>
 </section>
-

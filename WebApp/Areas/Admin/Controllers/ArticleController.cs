@@ -11,6 +11,7 @@ using System.Diagnostics;
 namespace WebApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+
     public class ArticleController : Controller
     {
         private readonly AppDbContext _context;
@@ -124,13 +125,15 @@ namespace WebApp.Areas.Admin.Controllers
                 };
                 tagList.Add(articleTag);
             }
-
+            
+            
 
             _context.ArticleTags.AddRange(tagList);
             _context.Articles.Update(article);
 
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
+
         }
 
 
@@ -138,7 +141,11 @@ namespace WebApp.Areas.Admin.Controllers
         public IActionResult Deteil(int id)
         {
 
-            var articles = _context.Articles.SingleOrDefault(a => a.Id == id);
+            var articles = _context.Articles
+                .Include(x=>x.Category)
+                .Include(x=>x.ArticleTags)
+                .ThenInclude(x => x.Tag)      
+                .SingleOrDefault(a => a.Id == id);
             
             return View(articles);
         
@@ -155,11 +162,13 @@ namespace WebApp.Areas.Admin.Controllers
 
         public IActionResult Delete(Article  article)
         {
+            
             var result = _context.Articles.FirstOrDefault(x => x.Id == article.Id);
             result.IsDeleted = true;
             _context.Articles.Update(result);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
+
         }
 
 
