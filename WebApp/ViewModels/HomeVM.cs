@@ -7,6 +7,7 @@ namespace WebApp.ViewModels
     {
         public List<Article> Articles { get; set; }
 
+        public List<Article> PopularArticles { get; set; }
 
 
     }

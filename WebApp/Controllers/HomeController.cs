@@ -17,24 +17,27 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-;
+            ;
 
             var articles = _context.Articles
             .Include(x => x.Category)
-            .Include(x=>x.User)
+            .Include(x => x.User)
             .Where(x => x.IsDeleted == false || x.IsActive == true)
             .ToList();
 
+            var popularArticles = _context.Articles.Include(x => x.Category)
+            .Include(x => x.User)
+            .Where(x => x.IsDeleted == false || x.IsActive == true)
+            .OrderBy(x => x.Views).ToList();
 
-            ViewData["MaxValue"] =  _context.Articles.OrderBy(x=>x.Views).ToList().TakeLast(2);
-            
 
-            HomeVM homeVM= new()
+            HomeVM homeVM = new()
             {
-                Articles= articles,
+                PopularArticles = popularArticles,
+                Articles = articles,
             };
 
-            
+
             return View(homeVM);
 
         }

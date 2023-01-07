@@ -88,7 +88,7 @@
                                             @if (FI.Extension == ".jpg" || FI.Extension == ".png")
                                             {
 
-                                                <img src="@article.PhotoUrl"  class="img-fluid" />
+                                                <img src="@article.PhotoUrl" class="img-fluid" />
                                             }
                                             else if (FI.Extension == ".mp4")
                                             {
@@ -105,7 +105,7 @@
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
-                                
+
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4><a href="/article/deteil/@article.Id/@article.SeoUrl" title="">@article.Title</a></h4>
@@ -115,8 +115,6 @@
                                     <small><a href="tech-author.html" title="">by @article.User.Name</a></small>
                                     <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> @article.Views</a></small>
                                 </div><!-- end meta -->
-
-
                             </div>
 
                             <!-- end blog-box -->
@@ -177,8 +175,9 @@
                         <div class="trend-videos">
                             @for (int i = 0; i < Model.Articles.Count; i++)
                             {
-                                foreach (var articleVideo in Model.Articles)
+                                foreach (var articleVideo in Model.PopularArticles.TakeLast(5))
                                 {
+                                        i++;
                                     FileInfo FI = new FileInfo(articleVideo.PhotoUrl);
                                     if (FI.Extension == ".mp4")
                                     {
@@ -204,7 +203,6 @@
                                         <hr class="invis">
 
                                     }
-                                    i++;
 
                                 }
                             }
@@ -216,27 +214,35 @@
                     <div class="widget">
                         <h2 class="widget-title">Popular Posts</h2>
                         <div class="blog-list-widget">
-                            <div class="list-group">        
+                            <div class="list-group">
                                 @{
-                                    foreach (var article in Model.Articles)
+                                    foreach (var article in Model.PopularArticles.TakeLast(5))
                                     {
-                                    ViewData["MaxValue"] = article.Views;
-                                        <a href="tech-single.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="~/upload/tech_blog_08.jpg" alt="" class="img-fluid float-left">
-                                                <h5>
-                                                @ViewData["MaxValue"]
-                                                </h5>
-                                                <small>12 Jan, 2016</small>
-                                            </div>
-                                        </a>
-                                    
+
+                                        FileInfo FIn = new FileInfo(article.PhotoUrl);
+                                        @if (FIn.Extension == ".jpg" || FIn.Extension == ".png")
+                                        {
+                                            <a href="/article/deteil/@article.Id/@article.SeoUrl" class="list-group-item l ist-group-item-action flex-column align-items-start">
+                                                <div class="w-100 justify-content-between">
+                                                    <img src="@article.PhotoUrl" style="max-width:100%; width:100%;" class="img-fluid" />
+                                                    <h5>
+                                                        @article.Title
+                                                    </h5>
+                                                    <small>@article.UpdatedDate</small>
+                                                </div>
+                                            </a>
+
+                                        }
                                     }
+
                                 }
-                               
                             </div>
-                        </div><!-- end blog-list -->
-                    </div><!-- end widget -->
+                        </div>
+
+                        <!-- end blog-list -->
+                    </div>
+
+                    <!-- end widget -->
 
                     <div class="widget">
                         <h2 class="widget-title">Recent Reviews</h2>
@@ -285,7 +291,9 @@
                                 </a>
                             </div>
                         </div><!-- end blog-list -->
-                    </div><!-- end widget -->
+                    </div>
+
+                    <!-- end widget -->
 
                     <div class="widget">
                         <h2 class="widget-title">Follow Us</h2>
@@ -319,7 +327,9 @@
                                 </a>
                             </div>
                         </div>
-                    </div><!-- end widget -->
+                    </div>
+
+                    <!-- end widget -->
 
                     <div class="widget">
                         <div class="banner-spot clearfix">
@@ -327,9 +337,19 @@
                                 <img src="~/upload/banner_03.jpg" alt="" class="img-fluid">
                             </div><!-- end banner-img -->
                         </div><!-- end banner -->
-                    </div><!-- end widget -->
-                </div><!-- end sidebar -->
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </div><!-- end container -->
+                    </div>
+
+                    <!-- end widget -->
+                </div>
+
+                <!-- end sidebar -->
+            </div>
+
+            <!-- end col -->
+        </div>
+
+        <!-- end row -->
+    </div>
+
+    <!-- end container -->
 </section>
