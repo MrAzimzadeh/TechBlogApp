@@ -64,7 +64,10 @@ namespace WebApp.Controllers
                 article.Views += 1;
                 _context.Articles.Update(article);
                 _context.SaveChanges();
-            }
+
+
+                 
+                           }
 
 
             var suggestArticle = _context.Articles.Include(x => x.Category).Where(x => x.Id != article.Id && x.CategoryId == article.CategoryId).Take(2).ToList();
@@ -81,6 +84,10 @@ namespace WebApp.Controllers
                 Befero = before,
 
             };
+
+            article.Views = int.MaxValue;
+
+
             return View(deteilVM);
 
 
