@@ -34,12 +34,37 @@
                     </div><!-- end title -->
 
                     <div class="single-post-media">
-                        <img src="@Model.Article.PhotoUrl" alt="" class="img-fluid">
-                    </div><!-- end media -->
+
+
+
+                        @{
+                            FileInfo FI = new FileInfo(Model.Article.PhotoUrl);
+                        }
+                        @if (FI.Extension == ".jpg" || FI.Extension == ".png")
+                        {
+
+                            <img src="@Model.Article.PhotoUrl" style="width:100%;" class="img-fluid" />
+                        }
+                        else if (FI.Extension == ".mp4")
+                        {
+                            <video width="100%" height="100%" controls>
+                                <source src="@Model.Article.PhotoUrl" type="video/mp4">
+                                <source src="@Model.Article.PhotoUrl" type="video/ogg">
+                                error
+                            </video>
+                        }
+                        @*     <img src="@Model.Article.PhotoUrl" alt="" >*@
+
+
+                    </div>
+
+                    <!-- end media -->
 
                     <div class="blog-content">
                         @Html.Raw(Model.Article.Content)
-                    </div><!-- end content -->
+                    </div>
+
+                    <!-- end content -->
 
                     <div class="blog-title-area">
                         <div class="tag-cloud-single">
@@ -57,7 +82,9 @@
                                 <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div><!-- end post-sharing -->
-                    </div><!-- end title -->
+                    </div>
+
+                    <!-- end title -->
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -67,7 +94,9 @@
                                 </div><!-- end banner-img -->
                             </div><!-- end banner -->
                         </div><!-- end col -->
-                    </div><!-- end row -->
+                    </div>
+
+                    <!-- end row -->
 
                     <hr class="invis1">
 
@@ -108,7 +137,9 @@
                                 <!-- end col -->
                             }
                         </div><!-- end row -->
-                    </div><!-- end author-box -->
+                    </div>
+
+                    <!-- end author-box -->
 
                     <hr class="invis1">
 
@@ -134,7 +165,9 @@
 
                             </div><!-- end col -->
                         </div><!-- end row -->
-                    </div><!-- end author-box -->
+                    </div>
+
+                    <!-- end author-box -->
 
                     <hr class="invis1">
 
@@ -164,7 +197,9 @@
                                 <!-- end col -->
                             }
                         </div><!-- end row -->
-                    </div><!-- end custom-box -->
+                    </div>
+
+                    <!-- end custom-box -->
 
                     <hr class="invis1">
 
@@ -192,7 +227,9 @@
                                 </div>
                             </div><!-- end col -->
                         </div><!-- end row -->
-                    </div><!-- end custom-box -->
+                    </div>
+
+                    <!-- end custom-box -->
 
                     <hr class="invis1">
 
@@ -216,8 +253,12 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- end page-wrapper -->
-            </div><!-- end col -->
+                </div>
+
+                <!-- end page-wrapper -->
+            </div>
+
+            <!-- end col -->
 
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="sidebar">
@@ -402,7 +443,11 @@
                         </div><!-- end banner -->
                     </div><!-- end widget -->
                 </div><!-- end sidebar -->
-            </div><!-- end col -->
-        </div><!-- end row -->
+            </div>
+
+            <!-- end col -->
+        </div>
+
+        <!-- end row -->
     </div>
 </section>

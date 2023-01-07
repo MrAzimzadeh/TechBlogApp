@@ -247,6 +247,10 @@ namespace WebApp.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UploadVideo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -332,6 +336,27 @@ namespace WebApp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("WebApp.Models.SocialNetwork", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SocialNetworks");
                 });
 
             modelBuilder.Entity("WebApp.Models.Tag", b =>
@@ -459,6 +484,36 @@ namespace WebApp.Migrations
                     b.ToTable("UserAds");
                 });
 
+            modelBuilder.Entity("WebApp.Models.UserNetwork", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("SocialNetworkId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SocialNetworkId");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("UserNetworks");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -584,6 +639,23 @@ namespace WebApp.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("WebApp.Models.UserNetwork", b =>
+                {
+                    b.HasOne("WebApp.Models.SocialNetwork", "SocialNetwork")
+                        .WithMany()
+                        .HasForeignKey("SocialNetworkId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebApp.Models.User", "User")
+                        .WithMany("UserNetworks")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("SocialNetwork");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("WebApp.Models.Article", b =>
                 {
                     b.Navigation("ArticleTags");
@@ -601,6 +673,8 @@ namespace WebApp.Migrations
                     b.Navigation("Articles");
 
                     b.Navigation("UserAds");
+
+                    b.Navigation("UserNetworks");
                 });
 #pragma warning restore 612, 618
         }

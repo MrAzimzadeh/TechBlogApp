@@ -76,20 +76,43 @@
 
                         @foreach (var article in Model.Articles)
                         {
+
+                            
+
+
+
+
                             caunt++;
-
-
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="/article/deteil/@article.Id/@article.SeoUrl" title="">
-                                            <img src="@article.PhotoUrl" alt="@article.Title" class="img-fluid">
+                                            @*<img src="@article.PhotoUrl" alt="@article.Title" class="img-fluid">*@
+                                            @{
+                                                FileInfo FI = new FileInfo(article.PhotoUrl);
+                                            }
+                                            @if (FI.Extension == ".jpg" || FI.Extension == ".png")
+                                            {
+
+                                                <img src="@article.PhotoUrl"  class="img-fluid" />
+                                            }
+                                            else if (FI.Extension == ".mp4")
+                                            {
+                                                <video width="100%" height="100%" controls class="img-fluid">
+                                                    <source src="@article.PhotoUrl" type="video/mp4">
+                                                    <source src="@article.PhotoUrl" type="video/ogg">
+                                                    error
+                                                </video>
+                                            }
+                                            <!-- end blog-box -->
+                                            @*<hr class="invis">*@
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 
+
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4><a href="/article/deteil/@article.Id/@article.SeoUrl" title="">@article.Title</a></h4>
                                     <p> @Html.Raw(article.Content.Substring(0, 5))</p> <!--5  E KIMI YAZIR -->
@@ -158,51 +181,41 @@
                     <div class="widget">
                         <h2 class="widget-title">Trend Videos</h2>
                         <div class="trend-videos">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="tech-single.html" title="">
-                                        <img src="~/upload/tech_video_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span class="videohover"></span>
-                                        </div><!-- end hover -->
-                                    </a>
-                                </div><!-- end media -->
-                                <div class="blog-meta">
-                                    <h4><a href="tech-single.html" title="">We prepared the best 10 laptop presentations for you</a></h4>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
+                            @for (int i = 0; i < Model.Articles.Count; i++)
+                            {
+                                foreach (var articleVideo in Model.Articles)
+                                {
+                                    FileInfo FI = new FileInfo(articleVideo.PhotoUrl);
+                                    if (FI.Extension == ".mp4")
+                                    {
+                                        <div class="blog-box">
+                                            <div class="post-media">
+                                                <a href="/article/deteil/@articleVideo.Id/@articleVideo.SeoUrl" title="">
 
-                            <hr class="invis">
+                                                    <video width="100%" height="100%" controls>
+                                                        <source src="@articleVideo.PhotoUrl" type="audio/mp4">
+                                                    </video>
+                                                    <div class="hovereffect">
+                                                        <span class="videohover"></span>
+                                                    </div><!-- end hover -->
+                                                </a>
+                                            </div><!-- end media -->
+                                            <div class="blog-meta">
+                                                <h4><a href="/article/deteil/@articleVideo.Id/@articleVideo.SeoUrl" title="">@articleVideo.Title</a></h4>
+                                            </div><!-- end meta -->
+                                        </div>
 
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="tech-single.html" title="">
-                                        <img src="~/upload/tech_video_02.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span class="videohover"></span>
-                                        </div><!-- end hover -->
-                                    </a>
-                                </div><!-- end media -->
-                                <div class="blog-meta">
-                                    <h4><a href="tech-single.html" title="">We are guests of ABC Design Studio - Vlog</a></h4>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
+                                        <!-- end blog-box -->
 
-                            <hr class="invis">
+                                        <hr class="invis">
 
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="tech-single.html" title="">
-                                        <img src="~/upload/tech_video_03.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span class="videohover"></span>
-                                        </div><!-- end hover -->
-                                    </a>
-                                </div><!-- end media -->
-                                <div class="blog-meta">
-                                    <h4><a href="tech-single.html" title="">Both blood pressure monitor and intelligent clock</a></h4>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
+                                    }
+                                    i++;
+
+                                }
+                            }
+
+
                         </div><!-- end videos -->
                     </div><!-- end widget -->
 

@@ -44,7 +44,22 @@
                         <tr>
                             <td>@article.Title</td>
                             <td>
-                                <img src="@article.PhotoUrl" style="width:100%;" />
+                                @{
+                                    FileInfo FI = new FileInfo(article.PhotoUrl);
+                                }
+                                @if (FI.Extension == ".jpg" || FI.Extension == ".png")
+                                {
+
+                                    <img src="@article.PhotoUrl" style="width:100%;" />
+                                }
+                                else if (FI.Extension == ".mp4")
+                                {
+                                    <video width="100%" height="100%" controls>
+                                        <source src="@article.PhotoUrl" type="video/mp4">
+                                        <source src="@article.PhotoUrl" type="video/ogg">
+                                        error
+                                    </video>
+                                }
                             </td>
                             <td>@article.User.Name</td>
                             <td>@article.Category.Name</td>

@@ -66,6 +66,7 @@ namespace WebApp.Areas.Admin.Controllers
             article.Views = 0;
             article.PhotoUrl = photo;
             article.SeoUrl = seo_url;
+            article.UploadVideo = "";
 
 
             await _context.Articles.AddAsync(article);

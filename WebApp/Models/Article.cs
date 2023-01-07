@@ -7,6 +7,7 @@
         public string Content { get; set; } ///
         public int Views { get; set; } //
         public string PhotoUrl { get; set; } //
+        public string UploadVideo { get; set; }
         public string SeoUrl { get; set; } //
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

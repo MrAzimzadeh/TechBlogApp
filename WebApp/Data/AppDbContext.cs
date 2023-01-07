@@ -16,6 +16,8 @@ namespace WebApp.Data
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<UserAds> UserAds { get; set; }
+        public DbSet<UserNetwork> UserNetworks { get; set; }
+        public DbSet<SocialNetwork> SocialNetworks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

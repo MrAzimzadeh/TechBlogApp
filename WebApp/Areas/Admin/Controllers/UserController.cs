@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using WebApp.Areas.Admin.ViewModels;
 using WebApp.Helpers;
@@ -81,7 +82,7 @@ namespace WebApp.Areas.Admin.Controllers
         public async Task<IActionResult> UserInfo(User user, IFormFile Photo)
         {
             var userId = _contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            var findUser = await _userManager.FindByEmailAsync(userId);
+            var findUser = await _userManager.FindByIdAsync(userId);
             var photoUrl = "";
             if (Photo == null)
             {
@@ -98,11 +99,10 @@ namespace WebApp.Areas.Admin.Controllers
             {
                 findUser.PhotoUrl = photoUrl;
                 findUser.Name = user.Name;
+                findUser.Surname = user.Surname;
+                findUser.AboutAuthor = user.AboutAuthor;
 
-                findUser.Surname= user.Surname;
-                findUser.AboutAuthor= user.AboutAuthor;
                 await _userManager.UpdateAsync(user);
-
             }
             catch (Exception)
             {
